@@ -1,0 +1,112 @@
+#station1 {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 20rem;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+#station2 {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 20rem;
+    justify-content: space-around;
+    justify-content: center;
+}
+
+.tpe {
+    margin: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* float: left; */
+    /* width: 50%; */
+}
+
+#station2son {
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    /* justify-content: space-around; */
+}
+
+.tt {
+    display: flex;
+
+    justify-content: center;
+}
+
+.SS {
+    margin: 10px;
+}
+
+.input-wrapper {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.zone {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.date {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.form_title {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.input {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.no {
+    display: none;
+}
+
+.yes {
+    display: flex;
+}
+
+.sub {
+    height: 100%;
+}
+
+.datatext {
+    display: flex;
+    align-items: center;
+}
+
+.inout {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+}
+
+.inout-btn {
+    margin: 10px;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

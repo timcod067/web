@@ -1,0 +1,99 @@
+[
+    {
+        "OriginStationID": "0910",
+        "OriginStationName": {
+            "Zh_tw": "三坑",
+            "En": "Sankeng"
+        },
+        "DestinationStationID": "0920",
+        "DestinationStationName": {
+            "Zh_tw": "八堵",
+            "En": "Badu"
+        },
+        "Direction": 1,
+        "Fares": [
+            {
+                "TicketType": "成自",
+                "Price": 23.0
+            },
+            {
+                "TicketType": "孩自",
+                "Price": 12.0
+            },
+            {
+                "TicketType": "愛孩自",
+                "Price": 12.0
+            },
+            {
+                "TicketType": "成自折",
+                "Price": 12.0
+            },
+            {
+                "TicketType": "孩自折",
+                "Price": 6.0
+            },
+            {
+                "TicketType": "成莒",
+                "Price": 18.0
+            },
+            {
+                "TicketType": "孩莒",
+                "Price": 9.0
+            },
+            {
+                "TicketType": "愛孩莒",
+                "Price": 9.0
+            },
+            {
+                "TicketType": "成莒折",
+                "Price": 9.0
+            },
+            {
+                "TicketType": "孩莒折",
+                "Price": 5.0
+            },
+            {
+                "TicketType": "成復",
+                "Price": 15.0
+            },
+            {
+                "TicketType": "孩復",
+                "Price": 8.0
+            },
+            {
+                "TicketType": "愛孩復",
+                "Price": 8.0
+            },
+            {
+                "TicketType": "成復折",
+                "Price": 8.0
+            },
+            {
+                "TicketType": "孩復折",
+                "Price": 4.0
+            },
+            {
+                "TicketType": "成普",
+                "Price": 11.0
+            },
+            {
+                "TicketType": "孩普",
+                "Price": 6.0
+            },
+            {
+                "TicketType": "愛孩普",
+                "Price": 6.0
+            },
+            {
+                "TicketType": "成普折",
+                "Price": 6.0
+            },
+            {
+                "TicketType": "孩普折",
+                "Price": 3.0
+            }
+        ],
+        "UpdateTime": "2021-11-26T10:36:27+08:00",
+        "VersionID": 3
+    }
+]
