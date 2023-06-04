@@ -25,7 +25,7 @@
   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="../html/firstpage.html">首頁</a>
+      <a class="navbar-brand" href="{{ url_for('firstpage')}}">首頁</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,13 +33,13 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" href="../html/checi.html">火車查詢</a>
+            <a class="nav-link active" href="{{ url_for('checi')}}">火車查詢</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../html/page4.html">外部連結</a>
+            <a class="nav-link" href="{{ url_for('outlink')}}">外部連結</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../html/finalpage.html">關於我們</a>
+            <a class="nav-link" href="{{ url_for('aboutus')}}">關於我們</a>
           </li>
         </ul>
       </div>
@@ -52,25 +52,25 @@
 
   <div class="libu">
     <div class="col libutton">
-      <a href="../html/checi.html">
+      <a href="{{ url_for('checi')}}">
         <button class="btn btn-secondary btn-lg">車次查詢</button>
 
       </a>
     </div>
     <div class="col libutton">
-      <a href="../html/money.html">
+      <a href="{{ url_for('money')}}">
         <button class="btn btn-secondary btn-lg">車票查詢</button>
 
       </a>
     </div>
     <div class="col libutton">
-      <a href="../html/page4.html">
+      <a href="{{ url_for('outlink')}}">
         <button class="btn btn-secondary btn-lg">外部連結</button>
       </a>
     </div>
 
     <div class="col libutton">
-      <a href="../html/finalpage.html">
+      <a href="{{ url_for('aboutus')}}">
         <button class="btn btn-secondary btn-lg">關於我們</button>
       </a>
     </div>
