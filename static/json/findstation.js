@@ -6,7 +6,7 @@ $(document).ready(
         // alert("hi")
         $.ajax({
             // url: originUrl,
-            url: "../json/rstationtime.json",
+            url: "/static/json/rstationtime.json",
             method: 'GET',
             dataType: 'json',
             data: '',
@@ -40,7 +40,7 @@ $(document).ready(
                             trainto.attr("class", "traincs");
                             trainto.append("起點站：", startstation);
                             trainto.append(" -> 終點站：", endstation);
-                            $("#searchcity").append(trainto);
+                            // $("#searchcity").append(trainto);
                             for (var j = 0; j < aa; j++) {
                                 var train = $("<tr>");
                                 var trainonetime = $("<td>");

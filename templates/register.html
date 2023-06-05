@@ -10,13 +10,13 @@
 <body>
     <div class="container">
         <h2>使用者註冊</h2>
-        <form action="{{ url_for('register') }}" method="post">
+        <form action="/register" method="post">
             <!-- {% if mesage is defined and mesage %}
             <div class="alert alert-warning">{{ mesage }}</div>
             {% endif %} -->
             <div class="form-group">
-                <label for="name">姓名:</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" name="name">
+                <label for="account">姓名:</label>
+                <input type="text" class="form-control" id="account" name="account" placeholder="Enter account" >
             </div>
             <div class="form-group">
                 <label for="email">電子信箱:</label>

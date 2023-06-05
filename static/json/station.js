@@ -11,7 +11,7 @@ $(document).ready(
 
         $.ajax({
             // url: originUrl,
-            url: "../json/station location.json",
+            url: "/static/json/station location.json",
             method: 'GET',
             dataType: 'json',
             data: '',
@@ -54,7 +54,7 @@ $(document).ready(
 
         $.ajax({
             // url: originUrl,
-            url: "../json/station location.json",
+            url: "/static/json/station location.json",
             method: 'GET',
             dataType: 'json',
             data: '',

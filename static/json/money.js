@@ -11,7 +11,7 @@ $(document).ready(
                 var GoUrl = `https://ptx.transportdata.tw/MOTC/v2/Rail/TRA/ODFare/${sation1}/to/${sation2}?%24top=30&%24format=JSON`;
                 $.ajax({
                     url: GoUrl,
-                    // url: "../json/money.json",
+                    //url: "/static/json/money.json",
                     method: 'GET',
                     dataType: 'json',
                     data: '',
