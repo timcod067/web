@@ -26,6 +26,21 @@ def aboutus():  # put application's code here
     return render_template('finalpage.html')
 
 @app.route('/login', methods=['GET', 'POST'])
+def register():
+    # if request.method == 'POST':
+    #     name = request.form["name"]
+    #     if user.check_duplicate_username(name):
+    #         return render_template('register.html', check = False)
+    #     account = request.form["account"]
+    #     password = request.form["password"]
+    #     phone = request.form["phone"]
+    #     email = request.form["email"]
+    #     bcrypt = Bcrypt()
+    #     hashed_password = bcrypt.generate_password_hash(password=password)
+    #     user.register(name,account, hashed_password.decode("utf-8"),phone,email)
+    #     return redirect(url_for('index'))
+    # return render_template('register.html')
+
 def login():
     # if request.method == 'POST':
         # account = request.form["account"]
