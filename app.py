@@ -9,6 +9,7 @@ app.secret_key = os.urandom(24)
 def firstpage():  # put application's code here
     return render_template('firstpage.html')
 
+
 @app.route('/checi')
 def checi():  # put application's code here
     return render_template('checi.html')
