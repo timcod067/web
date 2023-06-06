@@ -1,84 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <link rel="stylesheet" href="/static/css/button.css" type="text/css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+            crossorigin="anonymous"
+        ></script>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
-    <link rel="stylesheet" href="/static/css/button.css" type="text/css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-</head>
+    <body>
+        <img
+            src="https://cdn.bella.tw/files-20210830/63a091a3-6309-4cbb-a7db-80ca3cdb5c6d.jpg"
+            class="round mx-auto d-block"
+            width="1024"
+            height="200"
+        />
+        <div style="text-align: center">
+            <h1><b>車次查詢</b></h1>
+        </div>
 
-<body>
-    <img src="https://cdn.bella.tw/files-20210830/63a091a3-6309-4cbb-a7db-80ca3cdb5c6d.jpg"
-        class="round mx-auto d-block" width="1024" height="200">
-    <div style="text-align:center;">
-        <h1><b>車次查詢</b></h1>
-    </div>
-
-    <div class="input-wrapper">
-        <div class="input">
-            <input id="startStation" type="text" name="startStation" placeholder="出發站" class="sub" autocomplete="off">
-            <div class="dropdown">
-                <button class="btn btn-outline-primary dropdown-toggle input-group" type="button"
-                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                    城市
+        <div class="input-wrapper">
+            <div class="input">
+                <input
+                    id="startStation"
+                    type="text"
+                    name="startStation"
+                    placeholder="出發站"
+                    class="sub"
+                    autocomplete="off"
+                />
+                <div class="dropdown">
+                    <button
+                        class="btn btn-outline-primary dropdown-toggle input-group"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        城市
+                    </button>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                    >
+                        <div id="station2"></div>
+                    </ul>
+                </div>
+                <button
+                    type="button"
+                    id="inputid"
+                    class="btn btn-primary input-group"
+                    data-type="startStation"
+                >
+                    查詢
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <div id="station2">
-                    </div>
-                </ul>
             </div>
-            <button type="button" id="inputid" class="btn btn-primary input-group" data-type="startStation">查詢</button>
+
+            <div class="form_title">
+                <div class="datatext">日期</div>
+            </div>
+
+            <div class="date">
+                <input
+                    type="text"
+                    class="sub"
+                    placeholder="YYYY/MM/DD"
+                    value="2023/06/06"
+                />
+                <button type="button" class="btn btn-primary">送出</button>
+            </div>
         </div>
-        
-        <div class="form_title">
-            <div class="datatext">日期</div>
+
+        <div id="station2son" class="tt"></div>
+        <div id="searchcity"></div>
+        <div id="ffstation" class="blockquote"></div>
+
+        <div class="show-station-fav">
+            <div class="show-station">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">中途經過</th>
+                            <th scope="col">到站時間</th>
+                            <th scope="col">出發時間</th>
+                        </tr>
+                    </thead>
+                    <tbody id="s">
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+            {% if 'userData' in session: %}
+            <div class="show-fav row">
+                <div class="row show-fav-css show-fav-title">
+                    喜愛車站 - {% print(session['userData'][1]) %}
+                </div>
+                <form
+                    class="row show-fav-css show-fav-add"
+                    action="{{ url_for('addfav') }}"
+                    method="post"
+                >
+                    <div class="col-7">
+                        <input
+                            type="trainid"
+                            class="form-control"
+                            id="trainid"
+                            name="trainid"
+                            placeholder="輸入 車站號碼"
+                        />
+                    </div>
+                    <button type="submit" class="col-3 btn btn-success">
+                        新增
+                    </button>
+                </form>
+                {% for fav in favs %}
+                <div class="row show-fav-css">
+                    <button
+                        class="btn btn-outline-secondary col-6 favid"
+                        id="{{fav[0]}}"
+                    >
+                        {{fav[0]}} - {{fav[1]}}
+                    </button>
+                    <form class="col-3" action="/delfav" method="post">
+                        <input
+                            type="hidden"
+                            name="trainid"
+                            value="{{fav[0]}}"
+                        />
+                        <button type="submit" class="btn btn-danger">
+                            移除
+                        </button>
+                    </form>
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
-
-        <div class="date">
-            <input type="text" class="sub" placeholder="YYYY/MM/DD" value="2022/06/18">
-            <button type="button" class="btn btn-primary">送出</button>
-        </div>
-
-    </div>
-
-    <div id="station2son" class="tt">
-    </div>
-    <div id="searchcity">
-
-    </div>
-    <div id="ffstation" class="blockquote">
-    </div>
-
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th scope="col">中途經過</th>
-                <th scope="col">到站時間</th>
-                <th scope="col">出發時間</th>
-            </tr>
-        </thead>
-        <tbody id="s">
-            <tr>
-            </tr>
-        </tbody>
-    </table>
-
-</body>
-<script src="/static/json/station.js"></script>
-<script src="/static/json/findstation.js"></script>
-
+    </body>
+    <script src="/static/json/station.js"></script>
+    <script src="/static/json/findstation.js"></script>
 </html>

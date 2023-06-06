@@ -32,8 +32,6 @@ json_array = json.load(input_file)
 for item in json_array:
     trainid = item['StationID']
     trainstation = item['StationName']['Zh_tw']
-    print (trainid)
-    print (trainstation)
     sql = "insert into train (trainid, trainstation) values(?, ?)"
     values = [trainid, trainstation]
     conn.execute(sql, values)

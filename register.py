@@ -26,14 +26,12 @@ class Data:
     
     @staticmethod
     def getUserData(account):
-        print(account)
         conn = sqlite3.connect('user.sqlite')
         cursor = conn.cursor()
         sql = "select * from user where (account = ?)"
         values = [account]
         cursor.execute(sql, values)
         result = cursor.fetchone()
-        print("??????:? " , result)
         conn.commit()
         return result
     
@@ -45,7 +43,6 @@ class Data:
         values = [account]
         cursor.execute(sql, values)
         result = cursor.fetchone()
-        # print(result.fetchall())
         conn.commit()
         return result
     
